@@ -4,9 +4,9 @@ for i in range(n):
     temp = []
     for j in range(2):
         var = input()
-        if var.isdigit():
-            temp.insert(j, int(var))
-        else:
-            temp.insert(j, var)
+        try:
+            temp.append(float(var))
+        except:
+            temp.append(var)
     data.append(temp)
 print(data)
