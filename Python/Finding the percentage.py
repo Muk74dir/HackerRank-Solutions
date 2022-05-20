@@ -9,4 +9,4 @@ select = input()
 for i, j in data.items():
     if select == i:
         avar = sum(j) / len(j)
-print('%.2f' %avar)
+print('%.2f' %avar) 
